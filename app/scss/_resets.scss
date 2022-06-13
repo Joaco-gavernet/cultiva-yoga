@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 @font-face {
   font-family: 'Muthiara';
   src: url('../src/font-muthiara/muthiara.otf') format('truetype');
@@ -9,7 +10,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
@@ -33,17 +36,21 @@ body {
   width: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.15;
 }
 
-a, a:visited, a:hover {
-  text-decoration: none; 
-  color: inherit; 
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
   text-decoration: inherit;
 }
 
-a:hover{
+a:hover {
   color: $color-orange;
 }
 
@@ -94,7 +101,8 @@ ul {
   }
 }
 
-button, .button {
+button,
+.button {
   display: inline-block;
   padding: 0.875rem 1.875rem;
   border-radius: 50px;
