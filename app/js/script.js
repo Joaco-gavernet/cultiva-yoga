@@ -50,13 +50,13 @@ $(document).ready(() => {
             break;
           case '#section4b':
             window.scrollTo({
-              top: 1342,
+              top: 2142,
               behavior: 'smooth'
             });
             break;
           case '#section5':
             window.scrollTo({
-              top: 1983,
+              top: 2770,
               behavior: 'smooth'
             });
             break;
