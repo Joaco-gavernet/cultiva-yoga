@@ -1,0 +1,23 @@
+.nav-desktop {
+  @include flex(row, center, center);
+  height: 10vh;
+  width: 100%;
+  background-color: $color-salmon;
+  color: $color-oscuro;
+  @include font($font-xm, bold, none);
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  z-index: 4;
+
+  @include breakpoint-down(large) {
+    display: none;
+  }
+
+  .nav__links {
+    @include flex(row, space-evenly, center);
+    min-width: 80%;
+    min-height: 5vh;
+  }
+}

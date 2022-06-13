@@ -1,0 +1,133 @@
+.about {
+  background-color: $color-claro;
+  position: relative;
+
+  &__title {
+    display: inline-block;
+    padding: 10px 20px 30px 20px;
+    position: absolute;
+    top: -45px;
+    left: 20px;
+    @include font($font-xm, bold, none);
+    background-color: $color-claro;
+    border-radius: 20px;
+  }
+
+  .content {
+    height: 55rem;
+    position: relative;
+    overflow: hidden;
+    background-color: $color-claro;
+    background-image: url('../img/background-4-l.png');
+    background-position: 10% 40%;
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  .img-profile {
+    max-width: 230px;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 29%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint-up(medium) {
+      max-width: 300px;
+    }
+  }
+
+  .img-dialog {
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    width: 600px;
+  }
+
+  .content__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+    @include font($font-m, normal, none);
+    text-align: center;
+    width: 300px;
+
+    > .daniela {
+      font-family: 'Muthiara';
+    }
+
+    > span {
+      color: $color-orange;
+    }
+
+    .content__cta {
+      margin-top: 15px;
+      cursor: pointer;
+
+      
+      &:hover {
+        animation: hover 1200ms linear 2 alternate;
+      }
+  
+      &:active {
+        animation: active 1200ms ease 1 alternate; 
+        background: $color-orange-light;
+      }
+    }
+  }
+
+  .content-desktop {
+    background-color: $color-claro;
+    
+    .dialog-container__img {
+      width: 700px;
+    }
+
+    @include breakpoint-down(medium){
+      display: none;
+    }
+  }
+
+  .profile-container {
+    background-image: url('../img/background-4-l.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 20% -20%;
+    position: relative;
+    min-height: 90vh;
+    @include breakpoint-up(xlarge){
+      background-size: 100%;
+      background-position: 10% -10%;
+    }
+  }
+
+  .img-profile-desktop {
+    max-width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+
+  .dialog-container {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    z-index: 2;
+  }
+
+  .text-desktop {
+    top: 30%;
+    left: 57%;
+
+    .content__cta {
+      display: block;
+    }
+  }
+}
