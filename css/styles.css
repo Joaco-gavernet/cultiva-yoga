@@ -46,3 +46,39 @@
   height: 500px;
   border-radius: 20px;
 }
+
+.banner {
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../img/banner.png');
+  background-size: 100%;
+  background-position: 0% 35%;
+  background-repeat: no-repeat;
+}
+
+.banner .dialog-container {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: fit-content;
+  z-index: 2;
+}
+
+.banner .dialog-container__img {
+  width: 800px;
+  transform: scaleX(-1);
+}
+
+.banner .text-desktop {
+  position: absolute;
+  max-width: 370px;
+  text-align: center;
+  top: 28%;
+  left: 20%;
+}
+
+.banner .text-desktop .content__cta {
+  margin-top: 20px;
+  display: block;
+}
