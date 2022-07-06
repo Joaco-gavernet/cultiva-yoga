@@ -558,9 +558,9 @@ button,
 }
 .nav-desktop .nav__links {
   color: #1a1a1a;
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: bold;
-  text-transform: none;
+  text-transform: lowercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,8 +574,11 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 80%;
+  min-width: 60%;
   min-height: 5vh;
+}
+.nav-desktop .nav__links > a:hover {
+  color: #ffa851;
 }
 
 .hero {

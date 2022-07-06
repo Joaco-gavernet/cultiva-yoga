@@ -15,9 +15,13 @@
 
   .nav__links {
     color: $color-oscuro;
-    @include font($font-xm, bold, none);
+    @include font(20px, bold, lowercase);
     @include flex(row, space-evenly, center);
-    min-width: 80%;
+    min-width: 60%;
     min-height: 5vh;
+
+    >a:hover {
+      color: $color-orange-light;
+    }
   }
 }

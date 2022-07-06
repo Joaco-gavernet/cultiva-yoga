@@ -43,29 +43,54 @@ $(document).ready(() => {
       if ($(window).width() >= 1024) {
         switch (hash) {
           case '#section3':
-            window.scrollTo({
-              top: 708,
+            document.getElementById("section3").scrollIntoView({
+              block: "end",
               behavior: 'smooth'
-            });
+            })
             break;
           case '#section4b':
-            window.scrollTo({
-              top: 2142,
+            document.getElementById("section4b").scrollIntoView({
+              block: "end",
               behavior: 'smooth'
-            });
+            })
             break;
           case '#section5':
-            window.scrollTo({
-              top: 2770,
+            document.getElementById("section5").scrollIntoView({
+              block: "end",
               behavior: 'smooth'
-            });
+            })
             break;
           case '#index':
-          default:
-            window.scrollTo({
-              top: 0,
+            document.getElementById("index").scrollIntoView({
+              block: "end",
               behavior: 'smooth'
-            });
+            })
+            break;
+
+          // case '#section3':
+          //   window.scrollTo({
+          //     top: 708,
+          //     behavior: 'smooth'
+          //   });
+          //   break;
+          // case '#section4b':
+          //   window.scrollTo({
+          //     top: 2142,
+          //     behavior: 'smooth'
+          //   });
+          //   break;
+          // case '#section5':
+          //   window.scrollTo({
+          //     top: 2770,
+          //     behavior: 'smooth'
+          //   });
+          //   break;
+          // case '#index':
+          // default:
+          //   window.scrollTo({
+          //     top: 0,
+          //     behavior: 'smooth'
+          //   });
         }
       }
     }
