@@ -3,9 +3,11 @@
   position: relative;
   margin-top: 2rem;
   min-height: 140vh;
+
   @include breakpoint-up(medium) {
     margin-top: 0;
   }
+
   @include breakpoint-up(medium) {
     display: none;
   }
@@ -66,7 +68,7 @@
     top: 40%;
     left: -120px;
   }
-  
+
   .background__image {
     width: 120%;
 
@@ -92,15 +94,15 @@
     top: 20%;
     left: 30%;
 
-    > h2 {
+    >h2 {
       @include font($font-xm, bold, none);
 
-      > span {
+      >span {
         color: $color-orange;
       }
     }
-    
-    > p {
+
+    >p {
       @include font($font-m, normal, none);
       margin-top: .5rem;
     }
@@ -110,16 +112,19 @@
 .services-desktop {
   min-height: 80vh;
   position: relative;
+
   @include breakpoint-up(medium) {
-    background-color: $color-salmon;
+    background-color: $color-ddl;
 
     .services__title {
-      background-color: $color-salmon;
+      background-color: $color-ddl;
     }
   }
+
   @include breakpoint-down(small) {
     display: none;
   }
+
   @include breakpoint-down(medium) {
     .services-desktop__info {
       @include flex(column, center, center);
@@ -131,7 +136,7 @@
       margin-top: 2rem;
       text-align: center;
 
-      > p {
+      >p {
         margin-top: 1rem;
       }
     }
@@ -158,16 +163,16 @@
       margin-right: 8rem;
     }
 
-    > h2 {
+    >h2 {
       @include font($font-xl, bold, none);
     }
 
-    > p {
+    >p {
       margin-top: 2rem;
     }
 
     span {
-      color: $color-orange;
+      color: $color-orange-light;
     }
   }
 }
