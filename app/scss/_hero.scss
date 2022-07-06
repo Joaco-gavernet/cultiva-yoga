@@ -2,9 +2,11 @@
   min-height: 100vh;
   background-color: $color-ddl;
   position: relative;
-  @include breakpoint-up(large){
+
+  @include breakpoint-up(large) {
     display: none;
   }
+
   @include breakpoint-up(medium) {
     .hero__img {
       max-width: 280px;
@@ -19,17 +21,17 @@
 
     h1 {
       @include font($font-m, bold, uppercase);
-  
-      > span {
+
+      >span {
         color: $color-orange;
       }
     }
-  
+
     h2 {
       @include font($font-xs, normal, none);
       margin-top: 0.8rem;
-  
-      > span {
+
+      >span {
         @include font($font-s, normal, none);
         font-family: 'Muthiara';
       }
@@ -48,7 +50,7 @@
     z-index: 1;
     animation: logo-init 2s 1s 1 forwards;
   }
-  
+
   &__img {
     max-width: 200px;
   }
@@ -68,7 +70,7 @@
 }
 
 .hero-desktop {
-  @include breakpoint-down(medium){
+  @include breakpoint-down(medium) {
     display: none;
   }
 
@@ -78,7 +80,6 @@
 
 
   &__menuContainer {
-    @include font($font-l, bold, none);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,25 +89,25 @@
     height: 100vh;
     border-radius: 42% 47% 59% 30% / 0% 48% 66% 0%;
 
-    > ul {
+    >ul {
       position: relative;
       display: flex;
       flex-direction: column;
     }
 
-    > ul:hover li {
+    >ul:hover li {
       opacity: 0;
     }
 
-    > ul li {
+    >ul li {
       transition: all 0.5s ease-in;
     }
 
-    > ul li:hover {
+    >ul li:hover {
       opacity: 1;
     }
 
-    > ul li::before {
+    >ul li::before {
       content: attr(data-text);
       position: absolute;
       top: 50%;
@@ -121,21 +122,23 @@
       opacity: 0;
     }
 
-    > ul li:hover::before {
+    >ul li:hover::before {
       opacity: 0.2;
       letter-spacing: 0;
     }
 
-    > ul li a {
+    >ul li a {
       position: relative;
       display: inline-block;
       padding: 6px 15px;
       letter-spacing: 2px;
       transition: 0.5s;
       z-index: 1;
+      @include font($font-l, bold, none);
+
 
       &:hover {
-        color: $color-oscuro;
+        color: $color-orange-light;
         transform: scale(1.3);
       }
     }
@@ -173,8 +176,8 @@
     margin: 2rem 2rem 0 2rem;
     text-align: center;
 
-    > span {
-      color: $color-orange;
+    >span {
+      color: $color-orange-light;
     }
   }
 
@@ -182,14 +185,14 @@
     @include font($font-m, normal, none);
     margin-top: 0.8rem;
 
-    > span {
+    >span {
       @include font($font-xm, normal, none);
       font-family: 'Muthiara';
     }
   }
 
   .logoContainer__button {
-    background: $color-orange;
+    background: $color-orange-light;
     border-radius: 100px;
     padding: 10px 50px;
     color: $color-claro;
@@ -205,7 +208,7 @@
     }
 
     &:active {
-      animation: active 1200ms ease 1 alternate; 
+      animation: active 1200ms ease 1 alternate;
       background: $color-orange-light;
     }
   }

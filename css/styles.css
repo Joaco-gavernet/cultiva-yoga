@@ -35,6 +35,10 @@
   }
 }
 
+.hero-desktop__menuContainer {
+  font-weight: 500;
+}
+
 .profile-container {
   display: flex;
   justify-content: center;
