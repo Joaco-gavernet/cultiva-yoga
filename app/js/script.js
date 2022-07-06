@@ -66,31 +66,6 @@ $(document).ready(() => {
               behavior: 'smooth'
             })
             break;
-
-          // case '#section3':
-          //   window.scrollTo({
-          //     top: 708,
-          //     behavior: 'smooth'
-          //   });
-          //   break;
-          // case '#section4b':
-          //   window.scrollTo({
-          //     top: 2142,
-          //     behavior: 'smooth'
-          //   });
-          //   break;
-          // case '#section5':
-          //   window.scrollTo({
-          //     top: 2770,
-          //     behavior: 'smooth'
-          //   });
-          //   break;
-          // case '#index':
-          // default:
-          //   window.scrollTo({
-          //     top: 0,
-          //     behavior: 'smooth'
-          //   });
         }
       }
     }
